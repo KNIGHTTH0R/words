@@ -9,7 +9,9 @@
 #### +---------- LANGUAGES ---------------- ####
 
 
-#' Get languages for which wordlists are available
+#' Get shortcodes for all implemented languages.
+#' @examples
+#' get_languages()
 #' @export
 #' 
 get_languages <- function()

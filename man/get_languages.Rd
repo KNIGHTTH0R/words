@@ -2,11 +2,14 @@
 % Please edit documentation in R/random-words-and-sentences.R
 \name{get_languages}
 \alias{get_languages}
-\title{Get languages for which wordlists are available}
+\title{Get shortcodes for all implemented languages.}
 \usage{
 get_languages()
 }
 \description{
-Get languages for which wordlists are available
+Get shortcodes for all implemented languages.
+}
+\examples{
+get_languages()
 }
 
