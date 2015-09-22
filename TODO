@@ -1,2 +1,3 @@
 TODO
+* file path retrieval in .onAttach makes problems
 * use R6 object for language list to avoid object replication
