@@ -1,6 +1,7 @@
 # load wordlists into workspace when package is attached
 #
-.onAttach <- function(lib, pkg) 
+
+.onLoad <- function(lib, pkg) 
 {
   l <- list()
   class(l) <- "wordlist"
@@ -11,7 +12,7 @@
 
 # clean up workspace
 #
-.onUnload <- function (libpath)
+.onDetach <- function (libpath)
 {
   rm(".words", envir = .GlobalEnv)
 }

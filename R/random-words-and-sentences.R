@@ -16,8 +16,8 @@
 #' 
 get_languages <- function()
 {
-  #path <- system.file("inst/extdata/wordlists", package = "words")
-  path <- file.path("inst/extdata/wordlists")
+  path <- system.file("extdata/wordlists", package = "words")
+  #path <- file.path("inst/extdata/wordlists")
   files <- list.files(path, pattern = ".txt")
   gsub(".txt", "", files)
 }
@@ -36,8 +36,8 @@ load_word_list <- function(lang="en")
   if (all(lang != langs))
     stop("Language '", lang, "' is not known. Please choose from: ", paste(langs,""), call. = FALSE)
   
-  #file <- system.file("inst/extdata/wordlists", paste0(lang, ".txt"), package = "words")
-  file <- file.path("inst/extdata/wordlists", paste0(lang, ".txt"))
+  file <- system.file("extdata/wordlists", paste0(lang, ".txt"), package = "words")
+  #file <- file.path("inst/extdata/wordlists", paste0(lang, ".txt"))
   x <- read.table(file, stringsAsFactors = FALSE)[[1]]    # read and convert to vector
   .words[[lang]] <<- x                                    # add list to hidden object in workspace
 }
