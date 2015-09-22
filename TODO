@@ -1,0 +1,2 @@
+TODO
+* use R6 object for language list to avoid object replication

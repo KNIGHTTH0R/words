@@ -1,0 +1,12 @@
+Package: words
+Maintainer: Mark Heckmann <heckmann.mark@gmail.com>
+License: GPL (>= 3.0)
+Title: create random words or sentences
+Type: Package
+LazyLoad: yes
+Author: Mark Heckmann
+Description: Sometimes random words or sentences are needed as dummys or for simulation purposes. The functions in this package create random words or sentences in several languages. 
+Version: 0.1.9001
+Date: 2015-09-22
+VignetteBuilder: knitr
+
