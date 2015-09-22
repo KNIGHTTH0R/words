@@ -9,7 +9,8 @@
 #### +---------- LANGUAGES ---------------- ####
 
 
-#' get languages for which wordlists are available
+#' Get languages for which wordlists are available
+#' @export
 #' 
 get_languages <- function()
 {
@@ -42,8 +43,14 @@ load_word_list <- function(lang="en")
 
 #' Load language reference lists into memory
 #' 
-#' By default english is loaded. To show the available languages use
+#' By default an English wordlist is loaded. To show available languages use 
 #' \code{\link{get_languages}}.
+#' 
+#' @param ... Language shortcodes as character vector(s), e.g. \code{("en",
+#'   "de")}. See \code{\link{get_languages}} for available shortcodes.
+#' @examples
+#' load_languages("de", "nl")
+#' @export
 #' 
 load_languages <- function(...)
 {

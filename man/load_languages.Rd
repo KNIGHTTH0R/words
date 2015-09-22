@@ -6,8 +6,15 @@
 \usage{
 load_languages(...)
 }
+\arguments{
+\item{...}{Language shortcodes as character vector(s), e.g. \code{("en",
+"de")}. See \code{\link{get_languages}} for available shortcodes.}
+}
 \description{
-By default english is loaded. To show the available languages use
+By default an English wordlist is loaded. To show available languages use
 \code{\link{get_languages}}.
+}
+\examples{
+load_languages("de", "nl")
 }
 

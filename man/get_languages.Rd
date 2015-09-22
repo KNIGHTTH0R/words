@@ -2,11 +2,11 @@
 % Please edit documentation in R/random-words-and-sentences.R
 \name{get_languages}
 \alias{get_languages}
-\title{get languages for which wordlists are available}
+\title{Get languages for which wordlists are available}
 \usage{
 get_languages()
 }
 \description{
-get languages for which wordlists are available
+Get languages for which wordlists are available
 }
 
